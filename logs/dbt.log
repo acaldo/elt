@@ -1,0 +1,31 @@
+[0m19:21:24.388279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7febd0282650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7febd0a79330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7febd0a792d0>]}
+
+
+============================== 19:21:24.401411 | 1ab1eadb-dc5c-4e59-bd0c-1feb91b58c8d ==============================
+[0m19:21:24.401411 [info ] [MainThread]: Running with dbt=1.7.5
+[0m19:21:24.401999 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/caldo/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:21:24.402492 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/caldo/.dbt')}
+[0m19:21:24.402883 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m19:21:30.208533 [debug] [MainThread]: Starter project path: /home/caldo/elt/venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m19:21:30.211073 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:21:30.211583 [info ] [MainThread]: Setting up your profile.
+[0m19:22:16.911884 [info ] [MainThread]: Profile custom_postgres written to /home/caldo/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:22:16.923949 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 52.53774, "process_user_time": 1.747251, "process_kernel_time": 0.040118, "process_mem_max_rss": "89924", "process_in_blocks": "40", "process_out_blocks": "88"}
+[0m19:22:16.924654 [debug] [MainThread]: Command `dbt init` succeeded at 19:22:16.924517 after 52.54 seconds
+[0m19:22:16.925051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7febd0282650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7febd2617c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7febd0a79210>]}
+[0m19:22:16.925519 [debug] [MainThread]: Flushing usage events
