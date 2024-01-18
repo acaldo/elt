@@ -29,7 +29,7 @@ services:
     build:
       context: ./elt # Directory containing the Dockerfile and elt_script.py
       dockerfile: Dockerfile # Name of the Dockerfile, if it's something other than "Dockerfile", specify here
-    command: sh -c "sleep 5 && python elt_script.py"
+    command: sh -c "python elt_script.py"
     networks:
       - elt_network
     depends_on:
@@ -37,7 +37,7 @@ services:
       - destination_postgres
   
   dbt:
-    image: ghrc.io/dbt-labs/dbt-postgres:1.47
+    image: ghcr.io/dbt-labs/dbt-postgres:1.4.7
     command:
       [
         "run",
@@ -49,7 +49,7 @@ services:
     networks:
       - elt_network
     volumes:
-      - ./custom:postgres:/dbt
+      - ./custom_postgres:/dbt
       - ~/.dbt:/root
     depends_on:
       - elt_script
