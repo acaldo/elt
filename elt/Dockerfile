@@ -1,12 +1,13 @@
 FROM python:3.8-slim
 
-RUN apt-get update && apt-get install -y postgresql-client cron 
+RUN apt-get update && apt-get install -y postgresql-client 
+#RUN apt-get update && apt-get install -y postgresql-client cron 
 
-COPY start.sh /app/start.sh
+#COPY start.sh /app/start.sh
 COPY elt_script.py .
 
-WORKDIR /app
+#WORKDIR /app
 
-RUN echo "0 3 * * * python /app/elt_script.py" | crontab -
+#RUN echo "0 3 * * * python /app/elt_script.py" | crontab -
 
 CMD [ "python", "elt_scripy.py" ]
